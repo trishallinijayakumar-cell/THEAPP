@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover independent creators and small businesses around you.">
+  <title>The App — Discover Independent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="welcome" class="screen active">
+      <div class="hero">
+        <span class="eyebrow">DISCOVER DIFFERENT</span>
+        <h1>Find the<br><span>independent.</span></h1>
+        <p>Discover small businesses, creators, makers and services that deserve to be found.</p>
+        <button class="primary" data-go="role">Get started <span>→</span></button>
+      </div>
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section id="role" class="screen">
+      <div class="center-card">
+        <span class="eyebrow">WELCOME</span>
+        <h2>What brings you here?</h2>
+        <p>Choose how you want to use The App.</p>
+        <div class="role-grid">
+          <button class="role-card" data-go="consumer-onboarding">
+            <span class="role-icon">✦</span><strong>I'm a consumer</strong>
+            <small>Discover independent businesses and creators.</small>
+          </button>
+          <button class="role-card" data-go="business-onboarding">
+            <span class="role-icon">＋</span><strong>I'm a business</strong>
+            <small>Get discovered by people looking for something different.</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="consumer-onboarding" class="screen">
+      <div class="center-card narrow">
+        <span class="eyebrow">FOR CONSUMERS</span>
+        <h2>What's around you?</h2>
+        <p>A different way to discover independent businesses, handmade products and unique services.</p>
+        <button class="primary" data-go="map">Explore the map <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="business-onboarding" class="screen">
+      <div class="center-card narrow">
+        <span class="eyebrow">FOR BUSINESSES</span>
+        <h2>Get discovered.</h2>
+        <p>Put your independent business in front of people actively looking for something new.</p>
+        <button class="primary" data-go="registration">Create my profile <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="map" class="screen map-screen">
+      <header class="topbar"><div class="brand">THE APP<span>•</span></div><button class="avatar">T</button></header>
+      <div class="map-wrap">
+        <div class="map-placeholder">
+          <div class="map-label">GOOGLE MAPS</div>
+          <div class="pin pin-a">☕</div><div class="pin pin-b">🌱</div><div class="pin pin-c">✦</div><div class="pin pin-d">🧼</div>
+          <div class="map-note">Your approved independent businesses will appear here.</div>
+        </div>
+      </div>
+      <div class="explore-panel">
+        <div class="panel-heading"><div><span class="eyebrow">EXPLORE</span><h3>What are you looking for?</h3></div><button class="filter-button">Filter</button></div>
+        <div class="filters">
+          <button class="filter active">All</button><button class="filter">☕ Coffee</button><button class="filter">🍵 Matcha</button><button class="filter">🌱 Plants</button><button class="filter">🎨 Art</button><button class="filter">🧼 Handmade</button><button class="filter">💅 Beauty</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration" class="screen">
+      <div class="form-card">
+        <span class="eyebrow">BUSINESS REGISTRATION</span>
+        <h2>Tell us about your business.</h2>
+        <p class="muted">Applications are reviewed before businesses appear on the map.</p>
+        <form id="business-form">
+          <label>Business name<input required id="business-name" placeholder="Elemental & Co."></label>
+          <label>Category<select required id="business-category"><option value="">Choose a category</option><option>Food & Drink</option><option>Plants & Nature</option><option>Art & Creativity</option><option>Beauty</option><option>Handmade & Home</option><option>Independent Services</option></select></label>
+          <label>About your business<textarea required id="business-description" placeholder="What do you make or what service do you provide?"></textarea></label>
+          <label>Location<input required id="business-location" placeholder="Area / neighbourhood"></label>
+          <label>Certifications <span class="optional">(if applicable)</span><input type="file" id="business-certification" accept="image/*,.pdf"></label>
+          <button class="primary" type="submit">Submit for review <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="pending" class="screen">
+      <div class="center-card narrow">
+        <div class="status-icon">✓</div><span class="eyebrow">APPLICATION RECEIVED</span>
+        <h2>You're under review.</h2>
+        <p>We'll review your business information and relevant certifications. Approved businesses become discoverable on the map.</p>
+        <div class="status"><span></span> Pending review · up to 24 hours</div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
