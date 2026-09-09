@@ -1,0 +1,12 @@
+{
+  "appId": "com.foundit.sg",
+  "appName": "Found It",
+  "webDir": ".",
+  "server": {
+    "iosScheme": "https"
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "backgroundColor": "#ffffff"
+  }
+}
